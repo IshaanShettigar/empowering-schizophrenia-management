@@ -1,0 +1,35 @@
+{
+  "name": "empowering-schizophrenia-management",
+  "version": "1.0.0",
+  "description": "1. **Calendar**\r 2. **Customizable notifications**\r 3. **Journal** \r 4. **Community Forum** - Reddit-style forum (Featured blogs from healthcare professionals and other established personnel).\r 5. **Mental health assistant** powered by an LLM and voice generated with Whisper. (can talk to or chat with)\r 6. **Rewards, badges and streaks** tied to your account based on medication adherence and participation in the community. This is intended to \"gamify\" the experience.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IshaanShettigar/empowering-schizophrenia-management.git"
+  },
+  "author": "Ishaan Shettigar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IshaanShettigar/empowering-schizophrenia-management/issues"
+  },
+  "homepage": "https://github.com/IshaanShettigar/empowering-schizophrenia-management#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^7.0.0",
+    "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.0.0",
+    "mongoose": "^7.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
