@@ -21,6 +21,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         enum: ["caretaker", "patient", "special", "admin"],
         default: "patient"
+    },
+    streak: {
+        type: Number,
+        default: 0
     }
 })
 
