@@ -1,14 +1,14 @@
 require('dotenv').config()
 require("express-async-errors")
 
-
 const express = require('express')
 const mongoose = require("mongoose")
-
 const helmet = require('helmet')
 const cors = require('cors')
 
 const authRouter = require('./routes/auth')
+
+const authMiddleware = require('./middleware/authMiddleware')
 const notFound = require('./middleware/notFound')
 const errorHandler = require('./middleware/errorHandler')
 
@@ -22,6 +22,7 @@ app.use(express.json())
 // Authentication route
 app.use("/api/auth", authRouter)
 
+app.get("/api/test", authMiddleware, (req, res) => { res.send('HELLLLOO') }) // testing auth middleware
 
 // error handlers
 app.use(notFound)
